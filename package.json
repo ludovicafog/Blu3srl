@@ -1,0 +1,21 @@
+{
+  "name": "blu3-gestionale",
+  "version": "1.0.0",
+  "description": "Gestionale interno Blu3 Srl — commesse, preventivi, ordini, DDT, fatture e documenti",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/index.js",
+    "dev": "node --watch --disable-warning=ExperimentalWarning server/index.js",
+    "seed": "node --disable-warning=ExperimentalWarning server/seed.js",
+    "test": "node --disable-warning=ExperimentalWarning --test test/"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "express": "^5.2.1",
+    "multer": "^2.4.0"
+  }
+}

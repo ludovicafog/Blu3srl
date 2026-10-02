@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blu3 Gestionale</title>
+  <link rel="icon" type="image/png" href="/img/logo-blu3.png">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="side" id="side">
+      <a class="brand" href="#/">
+        <span class="logo"><img src="/img/logo-blu3.png" alt="Blu3 Srl"></span>
+        <span class="brand-text"><b>Blu3 Srl</b><small>Gestionale interno</small></span>
+      </a>
+      <nav id="nav">
+        <a href="#/" data-nav="dashboard"><i>▦</i>Cruscotto</a>
+        <a href="#/commesse" data-nav="commesse"><i>◫</i>Commesse</a>
+        <a href="#/documenti" data-nav="documenti"><i>❏</i>Documenti</a>
+        <a href="#/clienti" data-nav="clienti"><i>☺</i>Clienti</a>
+        <a href="#/fornitori" data-nav="fornitori"><i>⚙</i>Fornitori</a>
+      </nav>
+      <div class="side-foot">
+        <button class="btn light block" data-act="carica-doc">⤒ Carica documento</button>
+        <small>Società di Servizi Informatici e Tecnologici<br>Codice NATO AE428 · ISO 9001:2015</small>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="top">
+        <button class="btn ghost menu-btn" data-act="menu">☰</button>
+        <input id="search" type="search" placeholder="Cerca commessa, cliente o documento…" autocomplete="off">
+        <div id="search-res" class="search-res" hidden></div>
+      </header>
+      <div id="view" class="view"></div>
+    </main>
+  </div>
+  <div id="modal-root"></div>
+  <div id="toast" class="toast" hidden></div>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
